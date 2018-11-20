@@ -2,6 +2,7 @@ package Pages;
 
 import Base.TestBase;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -18,11 +19,23 @@ public  class Login {
 
     @FindBy(id="txtPassword")
      static
+    @CacheLookup
     WebElement password;
 
     @FindBy(id="btnLogin")
     static
+    @CacheLookup
     WebElement btn;
+
+    @FindBy(xpath="//a[contains(text(),'Go to Payroll')]")
+    static
+    @CacheLookup
+    WebElement Go_button;
+
+    @FindBy(xpath="//span[contains(text(),'Global Masters')]")
+    static
+    @CacheLookup
+    WebElement global_master;
 
 
     public Login(WebDriver driver) {
@@ -42,6 +55,8 @@ public  class Login {
       txtUserName.sendKeys(us);
       this.password.sendKeys(pwd);
       this.btn.click();
+      Go_button.click();
+      global_master.click();
   }
 
 
