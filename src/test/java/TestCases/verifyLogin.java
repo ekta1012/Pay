@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static Base.TestBase.driver;
 import static Base.TestBase.prop;
 
 public class verifyLogin {
@@ -19,9 +20,10 @@ public class verifyLogin {
 
     @BeforeMethod
     public void Setup() {
-        TestBase tb = new TestBase();
-        tb.initn();
-        log = new Login();
+        TestBase cdriver = new TestBase();
+        cdriver.initn();
+
+     log = new Login(cdriver.getDriver());
     }
 
     @Test
@@ -34,6 +36,6 @@ public class verifyLogin {
 
     @AfterMethod
     public void teardown() {
-
+        driver.quit();
     }
 }

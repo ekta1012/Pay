@@ -7,10 +7,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase  {
+
     public static WebDriver driver;
     public static Properties prop;
     public static FileInputStream fp;
@@ -19,7 +21,11 @@ public class TestBase  {
         try {
             prop = new Properties();
 
-            fp = new FileInputStream("C:\\Users\\abc\\IdeaProjects\\Pay\\src\\main\\java\\Config\\config.properties");
+            String className = TestBase.class.getName().replace(".", "/")+".class";
+            URL classUrl  = TestBase.class.getClassLoader().getResource(className);
+            String fullPath = classUrl==null ? null : classUrl.getPath();
+            String absolutePath = fullPath.substring(1,fullPath.length()-className.length());
+            fp = new FileInputStream(absolutePath + "/Config/config.properties");
 
             prop.load(fp);
              //prop.load(inputStream);
@@ -45,4 +51,13 @@ public class TestBase  {
             //driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
             driver.get(prop.getProperty("url"));
         }
+
+    public static WebDriver getDriver() {
+        return driver;
+    }
+
+    public static void setDriver(WebDriver driver) {
+
+        TestBase.driver = driver;
+    }
     }
