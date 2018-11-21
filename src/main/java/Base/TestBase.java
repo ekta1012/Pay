@@ -12,27 +12,20 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase  {
-
+    private  WebDriver web;
     public static WebDriver driver;
+    private static TestBase instance=new TestBase();
     public static Properties prop;
     public static FileInputStream fp;
-
-    public TestBase() {
-        try {
-            prop = new Properties();
-
-            String className = TestBase.class.getName().replace(".", "/")+".class";
-            URL classUrl  = TestBase.class.getClassLoader().getResource(className);
-            String fullPath = classUrl==null ? null : classUrl.getPath();
-            String absolutePath = fullPath.substring(1,fullPath.length()-className.length());
-            fp = new FileInputStream(absolutePath + "/Config/config.properties");
-
-            prop.load(fp);
-             //prop.load(inputStream);
-        } catch (Exception e) {
-            System.out.println("There is some Issue" + e);
-        }
+    public static  TestBase returnInstance()
+    {
+      return instance;
     }
+    private TestBase()
+    {
+
+    }
+
         public static void initn()
         {
             String browserName = prop.getProperty("browser");
@@ -51,13 +44,35 @@ public class TestBase  {
             //driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
             driver.get(prop.getProperty("url"));
         }
-
-    public static WebDriver getDriver() {
+    public WebDriver returnDriver()
+    {
         return driver;
     }
+
+
+  // public static WebDriver getDriver() {
+     //  return driver;
+     // }
 
     public static void setDriver(WebDriver driver) {
 
         TestBase.driver = driver;
+    }
+    public static void setProp() {
+
+        try {
+            prop = new Properties();
+
+            String className = TestBase.class.getName().replace(".", "/")+".class";
+            URL classUrl  = TestBase.class.getClassLoader().getResource(className);
+            String fullPath = classUrl==null ? null : classUrl.getPath();
+            String absolutePath = fullPath.substring(1,fullPath.length()-className.length());
+            fp = new FileInputStream(absolutePath + "/Config/config.properties");
+
+            prop.load(fp);
+            //prop.load(inputStream);
+        } catch (Exception e) {
+            System.out.println("There is some Issue" + e);
+        }
     }
     }
