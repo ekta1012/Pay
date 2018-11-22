@@ -1,0 +1,9 @@
+<suite name="Test-suite">
+    <test name="Login">
+        <classes>
+            <class name="TestCases.verifyLogin" />
+            <class name="TestCases.verifynavigation" />
+
+        </classes>
+    </test>
+</suite>
