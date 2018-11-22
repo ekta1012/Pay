@@ -10,9 +10,21 @@ public class utility_methods {
         Actions ac = new Actions(TestBase.returnInstance().returnDriver());
         if (flag) {
             ac.moveToElement(element).click().build().perform();
+
         } else {
+            //ac.moveToElement(element).perform();
             ac.moveToElement(element).perform();
         }
     }
-}
 
+    static public void windowHandler() {
+        for (String handle : TestBase.returnInstance().returnDriver().getWindowHandles()) {
+            TestBase.returnInstance().returnDriver().switchTo().window(handle);
+        }
+    }
+
+
+    static public void pagefactoryDriver() {
+
+    }
+}

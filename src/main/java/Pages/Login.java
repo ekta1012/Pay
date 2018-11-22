@@ -1,13 +1,13 @@
 package Pages;
 
-import Base.TestBase;
+
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
+
 
 public  class Login {
     String use;
@@ -50,14 +50,12 @@ public  class Login {
     public Login() {
 
     }
-  public void login(String us, String pwd)
-  {
- System.out.println(us);
+  public void login(String us, String pwd){
+ //System.out.println(us);
       this.txtUserName.sendKeys(us);
       this.password.sendKeys(pwd);
       this.btn.click();
       Go_button.click();
-
   }
 
 
