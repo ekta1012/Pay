@@ -4,6 +4,7 @@ import Base.TestBase;
 import Pages.Navigation_menu;
 import Utility.utility_methods;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
 public class verifynavigation {
@@ -16,8 +17,10 @@ public class verifynavigation {
         m.Navigation_action();
 
     }
-    @AfterMethod
+    @AfterSuite
     public void teardown() {
-        // driver.quit();
+
+
+        TestBase.returnInstance().returnDriver().quit();
     }
 }
