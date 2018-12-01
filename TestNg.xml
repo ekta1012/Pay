@@ -1,9 +1,11 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test-suite">
     <test name="Login">
         <classes>
             <class name="TestCases.verifyLogin" />
             <class name="TestCases.verifynavigation" />
-
+            <class name="TestCases.verifyglobal_Master" />
         </classes>
     </test>
 </suite>

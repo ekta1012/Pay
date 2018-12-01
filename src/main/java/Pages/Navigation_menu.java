@@ -22,6 +22,9 @@ public class Navigation_menu {
     static
     @CacheLookup
     WebElement clickEle;
+
+
+
     public Navigation_menu(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -34,7 +37,8 @@ public class Navigation_menu {
 
 
        utility_methods.action_movetoElements(a,false);
-       System.out.println("ekta");
        utility_methods.action_movetoElements(clickEle,true);
+        // utility_methods.action_movetoElements(clickEle1,true);
+
     }
 }
