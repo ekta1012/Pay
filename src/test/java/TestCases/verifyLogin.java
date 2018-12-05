@@ -28,18 +28,21 @@ public class verifyLogin {
 
     }
 
+    /**
+     * will perform initial Browser based setting
+     */
     @BeforeMethod
     public void Setup() {
-        /*TestBase cdriver = new TestBase();
-        cdriver.initn();
 
-   ash *****log = new Login(cdriver.getDriver()); */
         TestBase.setProp();
         TestBase.initn();
        //log=new Login(TestBase.getDriver());
         log=new Login(TestBase.returnInstance().returnDriver());
     }
 
+    /**
+     * will fetch the data from  property file
+     */
     @Test
     public void loginTest(){
       Login l=new Login();

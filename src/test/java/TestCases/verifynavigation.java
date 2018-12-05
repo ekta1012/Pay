@@ -8,8 +8,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 
 public class verifynavigation {
+
+    /**
+     * This method will used to perform action on  navigation  and click on Global master
+     *
+     */
+
     @AfterTest
-    public void global_master()
+    public void Navigation_on_global_master()
     {
 
         utility_methods.windowHandler();
@@ -17,8 +23,13 @@ public class verifynavigation {
         m.Navigation_action();
 
     }
+
+    /**
+     * will Teardown the session
+     *
+     */
     @AfterSuite
-    public void teardown() {
+    public void Teardown() {
 
 
         TestBase.returnInstance().returnDriver().quit();

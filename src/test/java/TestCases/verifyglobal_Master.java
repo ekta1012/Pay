@@ -1,25 +1,27 @@
 package TestCases;
 
 import Base.TestBase;
-import Pages.Login;
-import Pages.verifyPage;
-import org.junit.After;
-import org.openqa.selenium.WebElement;
+import Pages.GlobalMasterMenu_Pagecheck;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-
-import java.awt.*;
+import org.testng.asserts.SoftAssert;
 
 public class verifyglobal_Master {
-@AfterSuite
-public void Setup1() {
+    /**
+     * will verify the page inside of Global Master
+     */
+    @AfterSuite
+public void Pageverification() {
 
-   // System.out.println("EKTA");
 
-    verifyPage v=new verifyPage(TestBase.returnInstance().returnDriver());
+
+    GlobalMasterMenu_Pagecheck v=new GlobalMasterMenu_Pagecheck(TestBase.returnInstance().returnDriver());
 
     v.verifyPage_split();
+
+}
+public void PageNotFound()
+{
+
 }
 }
 

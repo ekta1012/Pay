@@ -50,6 +50,12 @@ public  class Login {
     public Login() {
 
     }
+
+    /**
+     *
+     * @param us (us is used for username)
+     * @param pwd (pwd is used for password)
+     */
   public void login(String us, String pwd){
  //System.out.println(us);
       this.txtUserName.sendKeys(us);
