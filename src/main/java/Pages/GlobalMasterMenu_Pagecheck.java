@@ -82,6 +82,7 @@ public class GlobalMasterMenu_Pagecheck {
 
                 System.out.println("URL:" + fullURL + " Returned::::" + utility_methods.isLinkBroken(new URL(fullURL)));
 
+
                 int s=utility_methods.getResponseCode(fullURL);
                 System.out.println(""+s);
                 if(s== 404)

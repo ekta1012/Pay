@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ec39ef1-03d4-485a-bd72-70e86b3d3efe" name="Default Changelist" comment="work on Navigation">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5ec39ef1-03d4-485a-bd72-70e86b3d3efe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Navigation_menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Navigation_menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/verifyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/Navigation_menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Pages/Navigation_menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pages/verifyPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utility/utility_methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utility/utility_methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifyLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifyLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,18 +42,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="45" />
-          <entry key="java" value="10266" />
+          <entry key="java" value="10268" />
           <entry key="log" value="1" />
           <entry key="properties" value="62" />
-          <entry key="txt" value="42" />
+          <entry key="txt" value="58" />
           <entry key="xml" value="424" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Enforced Plain Text" value="73" />
-          <entry key="JAVA" value="10266" />
-          <entry key="PLAIN_TEXT" value="88" />
+          <entry key="JAVA" value="10268" />
+          <entry key="PLAIN_TEXT" value="104" />
           <entry key="Properties" value="62" />
           <entry key="XML" value="351" />
         </counts>
@@ -85,7 +70,7 @@
           <entry key="log" value="22" />
           <entry key="properties" value="4" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -98,7 +83,7 @@
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="28" />
           <entry key="Properties" value="4" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -113,11 +98,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="105" column="68" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
+            <state relative-caret-position="75">
+              <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-output/testng-failed.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -162,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,8 +204,8 @@
         <option value="$PROJECT_DIR$/src/main/Log4J/Error.log" />
         <option value="$PROJECT_DIR$/Log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" />
       </list>
     </option>
   </component>
@@ -332,7 +326,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544004180140" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544005497074" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -655,16 +649,17 @@
       <option name="project" value="LOCAL" />
       <updated>1542887587925</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="5th Dec 2018">
+      <created>1544004316891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544004316891</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.05 at 13h 30m 01s.xml">
-      <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.05 at 13h 44m 44s.xml">
-      <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.05 at 14h 59m 50s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
@@ -687,6 +682,12 @@
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="C__Users_abc_IdeaProjects_Pay_test-output_testng-failed_xml - 2018.12.05 at 15h 30m 05s.xml">
+      <configuration name="C:/Users/abc/IdeaProjects/Pay/test-output/testng-failed.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_test-output_testng-failed_xml - 2018.12.05 at 15h 43m 53s.xml">
+      <configuration name="C:/Users/abc/IdeaProjects/Pay/test-output/testng-failed.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_test-output_testng-failed_xml - 2018.12.05 at 15h 46m 35s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/test-output/testng-failed.xml" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -719,7 +720,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.48025277" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.5007899" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -743,7 +744,8 @@
     <MESSAGE value="20th nov" />
     <MESSAGE value="21st nov" />
     <MESSAGE value="work on Navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="work on Navigation" />
+    <MESSAGE value="5th Dec 2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="5th Dec 2018" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Config.java" />
@@ -932,10 +934,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/testng-failed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -944,8 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="105" column="68" selection-start-line="105" selection-start-column="68" selection-end-line="105" selection-end-column="68" />
+        <state relative-caret-position="75">
+          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
