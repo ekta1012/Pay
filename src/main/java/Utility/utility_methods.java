@@ -60,7 +60,7 @@ public class utility_methods {
                     String[] onClickStrSplitArr = onClickStr.split(",");
                     String url = onClickStrSplitArr[1].substring(0, onClickStrSplitArr[1].length() - 1);
                     String str = url.replaceAll("'", "");
-                    System.out.println("" + str);
+                   // System.out.println("" + str);
                     urls.add(str);
                 }
 
@@ -74,7 +74,7 @@ public class utility_methods {
     }
 
 
-    public static int getResponseCode(String urlString) throws MalformedURLException, IOException {
+    public static int getResponseCode(String urlString) throws  IOException {
         URL url = new URL(urlString);
         HttpURLConnection huc = (HttpURLConnection)url.openConnection();
         huc.setRequestMethod("HEAD");
@@ -97,9 +97,11 @@ public class utility_methods {
             connection.setRequestProperty("Cookie", cookie);
             connection.connect();
 
-            String response = connection.getResponseMessage();
-            int res = connection.getResponseCode();
 
+
+            int res = connection.getResponseCode();
+            String response = connection.getResponseMessage();
+            System.out.println(""+response);
 
             connection.disconnect();
 

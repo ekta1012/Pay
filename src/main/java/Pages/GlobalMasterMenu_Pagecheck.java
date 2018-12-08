@@ -1,28 +1,25 @@
 package Pages;
 
 import Utility.utility_methods;
-
-
-
-
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
-
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
+
 import java.util.List;
 
-
-
-
-
 public class GlobalMasterMenu_Pagecheck {
+
+    String fullURL;int s;
 
     /**
      * LOGGER OF THE DEFINED CLASS
@@ -59,7 +56,6 @@ public class GlobalMasterMenu_Pagecheck {
         log.info("123");
         try {
 
-
 //   *******NEED TO ASK ABOUT :FOR MOVE ON TABS BELOW CODE IS REQUIRED <SO DO WE NEED TO IMPLEMENT ACTION FOR LIST ALSO?*******
             //utility_methods.action_movetoElements(link,true);
             //action_movetoElements.ac.moveToElement(we).click().build().perform();
@@ -78,37 +74,60 @@ public class GlobalMasterMenu_Pagecheck {
             try {
                 log.warn("warning");
 
-                String fullURL = "http://qaerp.franciscanecare.net" + urloc;
+                fullURL = "http://qaerp.franciscanecare.net" + urloc;
 
                 System.out.println("URL:" + fullURL + " Returned::::" + utility_methods.isLinkBroken(new URL(fullURL)));
-
-
-                int s=utility_methods.getResponseCode(fullURL);
-                System.out.println(""+s);
-                if(s== 404)
-                {
-                    try
-                    {
-                        log.fatal("Page is't opening,its have some issue" + fullURL);
-
-                    }
-                    catch(Exception e)
-                    {
-                       // log.fatal("Fatal");
-                       // System.out.println("At " +e.getMessage());
-                    }
-                }
+                // String m=utility_methods.isLinkBroken(new URL(fullURL));
 
 
             } catch (Exception ex) {
 
                 log.fatal("Fatal");
                 System.out.println("At " + " Exception occured)");
-                // "//-&gt; " + exp .getMessage());                }
+
             }
         }
     }
-}
+
+
+  public void url_responsecode() {
+
+      try {
+          urls = utility_methods.find_allLinksURL(link);
+          for (String urloc : urls) {
+              fullURL = "http://qaerp.franciscanecare.net" + urloc;
+              System.out.println("" + fullURL);
+              int s = utility_methods.getResponseCode(fullURL);
+
+              System.out.println("" + s);
+              if (s == 404) {
+System.out.println("Issue in this URL:::" +fullURL);
+                  Assert.assertEquals("OK","OK");
+
+                  //log.fatal("Page is't opening,its have some issue" + fullURL);
+
+              }
+          }
+      }catch(Exception e) {
+              // log.fatal("Fatal");
+               System.out.println("Issue in"+fullURL+"" +e.getMessage());
+          }
+
+      }
+
+     // String m=utility_methods.isLinkBroken(new URL(fullURL));
+
+
+
+
+
+ }
+
+
+
+
+
+
 
 
 

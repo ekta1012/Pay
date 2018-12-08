@@ -1,11 +1,28 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Test-suite">
-    <test name="Page verification">
+
+    <test name="Login">
         <classes>
             <class name="TestCases.verifyLogin" />
+             </classes>
+    </test>
+
+    <test name="Navigation on menu">
+        <classes>
             <class name="TestCases.verifynavigation" />
+        </classes>
+    </test>
+
+    <test name="Page Verification">
+        <classes>
             <class name="TestCases.verifyglobal_Master" />
         </classes>
     </test>
 </suite>
+
+
+
+
+
+

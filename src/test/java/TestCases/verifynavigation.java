@@ -3,9 +3,7 @@ package TestCases;
 import Base.TestBase;
 import Pages.Navigation_menu;
 import Utility.utility_methods;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.*;
 
 public class verifynavigation {
 
@@ -14,7 +12,8 @@ public class verifynavigation {
      *
      */
 
-    @AfterTest
+   // @AfterTest
+    @Test
     public void Navigation_on_global_master()
     {
 
@@ -28,10 +27,11 @@ public class verifynavigation {
      * will Teardown the session
      *
      */
-    @AfterSuite
+    /*
+  @AfterSuite
     public void Teardown() {
 
 
         TestBase.returnInstance().returnDriver().quit();
-    }
+    }*/
 }
