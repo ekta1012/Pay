@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="5ec39ef1-03d4-485a-bd72-70e86b3d3efe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/utility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utility/utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utility/utility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utility/utility_methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utility/utility_methods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifyLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifyLogin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class" afterDir="false" />
@@ -26,8 +28,8 @@
     <session id="-475065603">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -36,62 +38,66 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.33" value="2" />
+          <entry key="project.open.time.33" value="3" />
           <entry key="project.open.time.34" value="2" />
-          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="class" value="7" />
           <entry key="dummy" value="45" />
-          <entry key="java" value="11388" />
+          <entry key="java" value="13713" />
           <entry key="log" value="1" />
           <entry key="properties" value="62" />
-          <entry key="txt" value="58" />
-          <entry key="xml" value="580" />
+          <entry key="txt" value="59" />
+          <entry key="xml" value="581" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="CLASS" value="7" />
           <entry key="Enforced Plain Text" value="73" />
-          <entry key="JAVA" value="11388" />
-          <entry key="PLAIN_TEXT" value="104" />
+          <entry key="JAVA" value="13713" />
+          <entry key="PLAIN_TEXT" value="105" />
           <entry key="Properties" value="62" />
-          <entry key="XML" value="507" />
+          <entry key="XML" value="508" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="5" />
+          <entry key="class" value="10" />
           <entry key="css" value="1" />
           <entry key="exe" value="3" />
           <entry key="html" value="6" />
           <entry key="iml" value="1" />
-          <entry key="java" value="32" />
+          <entry key="java" value="42" />
           <entry key="js" value="1" />
           <entry key="log" value="24" />
+          <entry key="png" value="16" />
           <entry key="properties" value="4" />
           <entry key="txt" value="3" />
-          <entry key="xml" value="18" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
+          <entry key="CLASS" value="10" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="32" />
+          <entry key="Image" value="16" />
+          <entry key="JAVA" value="42" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="30" />
           <entry key="Properties" value="4" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -106,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="119">
+              <caret line="108" column="54" selection-start-line="108" selection-start-column="54" selection-end-line="108" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,8 +124,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="262">
+              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Navigation_menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,17 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="483">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,20 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utility/utility_methods.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestNg.xml">
+        <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="289">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -199,24 +211,24 @@
         <option value="$PROJECT_DIR$/src/TestCases/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/TestCases/LoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Config/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/Utility/utility.java" />
         <option value="$PROJECT_DIR$/TestNG.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Base/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/verifyPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/Navigation_menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/Login.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Log4j/LoggerClass.java" />
         <option value="$PROJECT_DIR$/Utility/log4j.xml" />
         <option value="$PROJECT_DIR$/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/Log4J/Error.log" />
         <option value="$PROJECT_DIR$/Log4j.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" />
         <option value="$PROJECT_DIR$/TestNg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utility/utility.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" />
       </list>
     </option>
   </component>
@@ -226,10 +238,10 @@
     </enabled-run-configurations>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="6" />
-    <option name="y" value="12" />
+    <option name="x" value="-53" />
+    <option name="y" value="105" />
     <option name="width" value="1317" />
-    <option name="height" value="788" />
+    <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -237,8 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,21 +286,6 @@
               <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pay" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Utility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="Log4J" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pay" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -323,30 +318,77 @@
               <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pay" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="old" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="old" type="462c0819:PsiDirectoryNode" />
+              <item name="Test-suite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="old" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pay" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="old" type="462c0819:PsiDirectoryNode" />
+              <item name="Test-suite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544271490894" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544529724189" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\abc\IdeaProjects\Pay\target\test-classes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\abc\IdeaProjects\Pay\target\classes" />
       <recent name="C:\Users\abc\IdeaProjects\Pay\Drivers" />
       <recent name="C:\Users\abc\IdeaProjects\Pay\src\main\resources" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\abc\IdeaProjects\Pay\target\test-classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -681,44 +723,52 @@
       <option name="project" value="LOCAL" />
       <updated>1544005535000</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="8th Dec 2018">
+      <created>1544271891443</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544271891443</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 07m 47s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 15h 58m 49s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 08m 28s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 16h 14m 46s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 15m 39s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 16h 15m 17s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 18m 28s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 16h 22m 34s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 19m 27s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 16h 32m 20s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 23m 05s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 16h 33m 06s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 24m 11s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 16h 48m 21s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 24m 45s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 17h 02m 49s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 35m 23s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 17h 09m 36s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.08 at 17h 47m 52s.xml">
+    <history-entry file="C__Users_abc_IdeaProjects_Pay_TestNg_xml - 2018.12.11 at 17h 30m 40s.xml">
       <configuration name="C:/Users/abc/IdeaProjects/Pay/TestNg.xml" configurationId="TestNG" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="2">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
+      <is-preview-enabled value="true" />
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
@@ -730,14 +780,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23206443" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23206443" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.86237186" side_tool="true" weight="0.9526066" />
@@ -745,11 +794,11 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.328594" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.73459715" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.7156398" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.5007899" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.13762811" weight="0.40758294" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.13762811" weight="0.45971563" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -770,28 +819,10 @@
     <MESSAGE value="21st nov" />
     <MESSAGE value="work on Navigation" />
     <MESSAGE value="5th Dec 2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="5th Dec 2018" />
+    <MESSAGE value="8th Dec 2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="8th Dec 2018" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Config.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties" />
-    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/LoginPageTest.class" />
-    <entry file="file://$PROJECT_DIR$/src/TestCases/LoginPageTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/LoginPageTest.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="343" selection-start-line="343" selection-end-line="343" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/Config/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/src/main/java/Base/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -819,9 +850,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/index.html" />
     <entry file="file://$PROJECT_DIR$/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
@@ -844,12 +873,6 @@
         <state relative-caret-position="-51" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifyLogin.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pages/Navigation_menu.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -865,16 +888,6 @@
     <entry file="file://$PROJECT_DIR$/Pay.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="116" column="2" selection-start-line="116" selection-start-column="2" selection-end-line="116" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utility/log4j.xml" />
     <entry file="file://$PROJECT_DIR$/target/test-classes/log4j.xml" />
     <entry file="file://$PROJECT_DIR$/logfile.txt" />
@@ -887,68 +900,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utility/utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/testng-failed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/testng-failed.xml" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="626" selection-start-line="626" selection-end-line="626" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestNg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Navigation_menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="55" column="42" lean-forward="true" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,27 +915,149 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utility/utility_methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utility/utility_methods.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utility/utility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="103" column="11" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211032324.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211032213.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211032147.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211032006.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211031935.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211031807.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211031701.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211030449.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211030958.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifyLogin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211042233.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211041516.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FailedTestsScreenShots/PageVerification20181211035848.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/Navigation_menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="108" column="54" selection-start-line="108" selection-start-column="54" selection-end-line="108" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -5,6 +5,8 @@ import Pages.Login;
 import Pages.Navigation_menu;
 import Utility.utility;
 import Utility.utility_methods;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -19,6 +21,9 @@ import static Base.TestBase.prop;
 public class verifyLogin {
 
     Login log;
+
+    public ExtentReports extent;
+    public ExtentTest extentTest;
 
     public verifyLogin() {
         super();
@@ -36,6 +41,8 @@ public class verifyLogin {
         TestBase.initn();
        //log=new Login(TestBase.getDriver());
         log=new Login(TestBase.returnInstance().returnDriver());
+        extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/Extentreport.html", true);
+       extentTest= extent.startTest("ext");
     }
 
     /**

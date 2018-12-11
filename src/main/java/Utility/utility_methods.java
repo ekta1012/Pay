@@ -1,14 +1,25 @@
 package Utility;
 
 import Base.TestBase;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.apache.commons.io.FileUtils;
+import org.testng.ITestResult;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
+
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -16,6 +27,10 @@ import java.util.List;
  */
 
 public class utility_methods {
+
+
+
+
 
     static public void action_movetoElements(WebElement element, Boolean flag) {
         Actions ac = new Actions(TestBase.returnInstance().returnDriver());
@@ -27,6 +42,27 @@ public class utility_methods {
             ac.moveToElement(element).perform();
         }
     }
+
+    static public String takeScreenShoot(WebDriver driver, String screenshotName) throws IOException {
+
+
+            String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+            TakesScreenshot scrShot = ((TakesScreenshot) TestBase.returnInstance().returnDriver());
+
+            //Call getScreenshotAs method to create image file
+
+            File SrcFile = scrShot.getScreenshotAs(OutputType.FILE);
+            String destination = System.getProperty("user.dir") + "/FailedTestsScreenShots/" + screenshotName + dateName + ".png";
+
+            //Move image file to new destination
+
+            File DestFile = new File(destination);
+
+            //Copy file at destination
+
+            FileUtils.copyFile(SrcFile, DestFile);
+        return  destination;
+        }
 
     /**
      * This is used to handling the window
@@ -83,6 +119,7 @@ public class utility_methods {
         //huc.getWebResponse().getStatusCode();
 
     }
+
 
 
     public static String isLinkBroken(URL url) throws Exception {

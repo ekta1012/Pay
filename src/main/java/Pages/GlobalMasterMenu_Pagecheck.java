@@ -1,5 +1,6 @@
 package Pages;
 
+import Base.TestBase;
 import Utility.utility_methods;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,8 @@ import java.util.List;
 
 public class GlobalMasterMenu_Pagecheck {
 
-    String fullURL;int s;
+    public String fullURL;
+    int s;
 
     /**
      * LOGGER OF THE DEFINED CLASS
@@ -90,30 +92,42 @@ public class GlobalMasterMenu_Pagecheck {
     }
 
 
-  public void url_responsecode() {
 
-      try {
-          urls = utility_methods.find_allLinksURL(link);
-          for (String urloc : urls) {
-              fullURL = "http://qaerp.franciscanecare.net" + urloc;
-              System.out.println("" + fullURL);
-              int s = utility_methods.getResponseCode(fullURL);
 
-              System.out.println("" + s);
-              if (s == 404) {
-System.out.println("Issue in this URL:::" +fullURL);
-                  Assert.assertEquals("OK","OK");
 
-                  //log.fatal("Page is't opening,its have some issue" + fullURL);
+    public void url_responsecode() {
 
-              }
-          }
-      }catch(Exception e) {
-              // log.fatal("Fatal");
-               System.out.println("Issue in"+fullURL+"" +e.getMessage());
-          }
+        try {
+            urls = utility_methods.find_allLinksURL(link);
+            for (String urloc : urls) {
+                fullURL = "http://qaerp.franciscanecare.net" + urloc;
+                System.out.println("" + fullURL);
+                int s = utility_methods.getResponseCode(fullURL);
 
-      }
+                System.out.println("" + s);
+                if (s == 404) {
+                    System.out.println("Issue in this URL:::" + fullURL);
+
+                    /** below specified screenshoot method executed successfully but has no use here thatswhy commenting*/
+
+                 //   utility_methods.takeScreenShoot(TestBase.returnInstance().returnDriver(),"G://test1.png");
+
+
+
+                }
+            }
+        } catch (Exception e) {
+            // log.fatal("Fatal");
+            System.out.println("Issue in" + fullURL + "" + e.getMessage());
+        }
+
+ catch(AssertionError ar)
+ {
+     System.out.println("Issue in" + fullURL + "" + ar.getMessage());
+ }
+    }
+}
+
 
      // String m=utility_methods.isLinkBroken(new URL(fullURL));
 
@@ -121,7 +135,7 @@ System.out.println("Issue in this URL:::" +fullURL);
 
 
 
- }
+
 
 
 
