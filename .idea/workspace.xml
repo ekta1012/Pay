@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ec39ef1-03d4-485a-bd72-70e86b3d3efe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestNg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/GlobalMasterMenu_Pagecheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utility/utility_methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifyglobal_Master.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCases/verifynavigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utility/utility_methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utility/utility_methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifyglobal_Master.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCases/verifynavigation.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +52,7 @@
           <entry key="java" value="18990" />
           <entry key="log" value="1" />
           <entry key="properties" value="62" />
-          <entry key="txt" value="61" />
+          <entry key="txt" value="62" />
           <entry key="xml" value="704" />
         </counts>
       </usages-collector>
@@ -70,7 +61,7 @@
           <entry key="CLASS" value="7" />
           <entry key="Enforced Plain Text" value="73" />
           <entry key="JAVA" value="18990" />
-          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="PLAIN_TEXT" value="108" />
           <entry key="Properties" value="62" />
           <entry key="XML" value="631" />
         </counts>
@@ -380,7 +371,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544868599927" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544869520532" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -722,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544530379667</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="15th Dec 2018">
+      <created>1544869082242</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544869082242</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -844,7 +842,8 @@
     <MESSAGE value="5th Dec 2018" />
     <MESSAGE value="8th Dec 2018" />
     <MESSAGE value="11th Dec 2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="11th Dec 2018" />
+    <MESSAGE value="15th Dec 2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="15th Dec 2018" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/URL.java">
