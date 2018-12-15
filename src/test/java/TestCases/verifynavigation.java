@@ -29,13 +29,13 @@ public class verifynavigation {
      *
      */
 
-    /*
+
   @AfterSuite
     public void Teardown() {
 
 
         TestBase.returnInstance().returnDriver().quit();
 
-    }*/
+    }
 }
 

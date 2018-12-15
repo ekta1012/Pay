@@ -19,6 +19,42 @@
             <class name="TestCases.verifyglobal_Master" />
         </classes>
     </test>
+    <test name="Master Settings">
+        <classes>
+            <class name="TestCases.VerifyMaster_Settings" />
+        </classes>
+    </test>
+
+    <test name="Payroll Master">
+        <classes>
+            <class name="TestCases.verifyPayrollMaster" />
+        </classes>
+    </test>
+
+    <test name="Advance">
+        <classes>
+            <class name="TestCases.verifyAdvance" />
+        </classes>
+    </test>
+
+    <test name="Verify Salary Structure">
+        <classes>
+            <class name="TestCases.verifySal_str" />
+        </classes>
+    </test>
+
+    <test name="Verify Salary Report">
+        <classes>
+            <class name="TestCases.verifySal_report" />
+        </classes>
+    </test>
+
+    <test name="Verify Reports">
+        <classes>
+            <class name="TestCases.verifySal_report" />
+        </classes>
+    </test>
+
 </suite>
 
 

@@ -1,27 +1,23 @@
 package Pages;
 
-import Base.TestBase;
+
 import Utility.utility_methods;
+
 import org.apache.log4j.xml.DOMConfigurator;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.apache.log4j.Logger;
-import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-
-import java.util.List;
-
+import java.util.*;
 public class GlobalMasterMenu_Pagecheck {
 
-    public String fullURL;
-    int s;
+    public String fullURL,list;
+    public static ArrayList urlList;
+
 
     /**
      * LOGGER OF THE DEFINED CLASS
@@ -41,10 +37,12 @@ public class GlobalMasterMenu_Pagecheck {
     @CacheLookup
     List<WebElement> link;
 
+
     public GlobalMasterMenu_Pagecheck(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
 
 
     /**
@@ -92,44 +90,51 @@ public class GlobalMasterMenu_Pagecheck {
     }
 
 
-
-
-
-    public void url_responsecode() {
-
+    public String url_responsecode() {
+           int noOfFailURL=0;
+           int successURL=0;
+           String FailedURL="";
         try {
             urls = utility_methods.find_allLinksURL(link);
             for (String urloc : urls) {
                 fullURL = "http://qaerp.franciscanecare.net" + urloc;
                 System.out.println("" + fullURL);
                 int s = utility_methods.getResponseCode(fullURL);
-
                 System.out.println("" + s);
-                if (s == 404) {
-                    System.out.println("Issue in this URL:::" + fullURL);
+                if (s == 200) {
 
+                    successURL++;
+                } else {
+                    System.out.println("Issue in this URL:::" + fullURL);
+                    noOfFailURL++;
+                    FailedURL = FailedURL +" "+"\n"+ "URL" + noOfFailURL + ":" + fullURL;
+                }
+
+            }
+        }
                     /** below specified screenshoot method executed successfully but has no use here thatswhy commenting*/
 
-                 //   utility_methods.takeScreenShoot(TestBase.returnInstance().returnDriver(),"G://test1.png");
+                    //   utility_methods.takeScreenShoot(TestBase.returnInstance().returnDriver(),"G://test1.png");
 
 
 
-                }
-            }
-        } catch (Exception e) {
+        catch(Exception e) {
             // log.fatal("Fatal");
-            System.out.println("Issue in" + fullURL + "" + e.getMessage());
+            //System.out.println("Issue in" + fullURL + "" + e.getMessage());
+            e.printStackTrace();
         }
 
- catch(AssertionError ar)
- {
-     System.out.println("Issue in" + fullURL + "" + ar.getMessage());
- }
+if(noOfFailURL>0)
+            return FailedURL;
+        else
+                return "OK";
+
     }
+
 }
 
 
-     // String m=utility_methods.isLinkBroken(new URL(fullURL));
+
 
 
 
