@@ -29,8 +29,26 @@ import java.util.List;
 public class utility_methods {
 
 
-  public static String response;
-  public static int res;
+    public static String response;
+    public static int res;
+
+    public static List<String> find_allLinksTitle(List<WebElement> eleList) throws Exception {
+        List<String> names = new ArrayList<>();
+        try {
+            for (WebElement currentWebElement : eleList) {
+                if (!currentWebElement.getAttribute("href").equalsIgnoreCase("javascript:void(0)")) {
+
+                    names.add(currentWebElement.getAttribute("span"));
+
+                }
+
+            }
+        } catch (Exception e) {
+            System.out.println("" + e);
+        }
+        return names;
+
+    }
 
 
     static public void action_movetoElements(WebElement element, Boolean flag) {
