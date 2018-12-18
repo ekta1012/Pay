@@ -36,14 +36,14 @@ public class utility_methods {
         List<String> names = new ArrayList<>();
         try {
             for (WebElement currentWebElement : eleList) {
-                if (!currentWebElement.getAttribute("href").equalsIgnoreCase("javascript:void(0)")) {
-
+                if (!currentWebElement.getAttribute("href").equalsIgnoreCase("")) {
                     names.add(currentWebElement.getAttribute("span"));
+                }
 
                 }
 
             }
-        } catch (Exception e) {
+        catch(Exception e) {
             System.out.println("" + e);
         }
         return names;
