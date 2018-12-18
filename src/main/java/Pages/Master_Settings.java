@@ -10,9 +10,16 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
-import static Utility.utility_methods.find_allLinksTitle;
+import static Pages.Advance.Fix_fad;
+import static Pages.GlobalMasterMenu_Pagecheck.li;
+import static Pages.Payroll_Master.define_SA;
+import static Pages.Reports.Bank_stmt;
+import static Pages.Salary_Reports.B_stmt;
+import static Pages.Salary_str.LWP;
+
 
 public class Master_Settings {
 
@@ -46,27 +53,64 @@ public class Master_Settings {
         utility_methods.action_movetoElements(gl, true);
         utility_methods.action_movetoElements(dl, true);
     }
-
-    public void find_allLinksTitle()
-
-    {
+    public static void find_allLinksTitle() {
         try {
-            List<String> name = utility_methods.find_allLinksTitle(Global_link);
-              for(String name1 : name)
-            System.out.println("name is" + name);
-        }
-        catch(Exception E)
-        {
+
+            List<String> master_setting = utility_methods.find_allLinksTitle(Global_link);
+            List<String> global_master = utility_methods.find_allLinksTitle(li);
+            //payroll master not working
+            List<String> payroll_master = utility_methods.find_allLinksTitle(define_SA);
+            //
+            List<String> Advance = utility_methods.find_allLinksTitle(Fix_fad);
+
+            List<String> sal_str = utility_methods.find_allLinksTitle(LWP);
+            List<String> sal_reports = utility_methods.find_allLinksTitle(B_stmt);
+            List<String> reports = utility_methods.find_allLinksTitle(Bank_stmt);
+
+            for(String ms: master_setting)
+            {
+                System.out.println("" +ms);
+            }
+
+            for(String gl: global_master)
+            {
+                System.out.println("" +gl);
+            }
+
+
+
+            for(String pay: payroll_master)
+            {
+                System.out.println("" +pay);
+            }
+
+
+            for(String sal: sal_reports)
+            {
+                System.out.println("" +sal);
+            }
+
+
+
+
+           /* ArrayList<String> arrList = new ArrayList<String>();
+
+
+            //arrList.add(master_setting);
+            arrList.add("global_master");
+            arrList.add("payroll_master");
+            arrList.add("Advance");
+            arrList.add("sal_str");
+            arrList.add("sal_reports");
+            arrList.add("sal_reports");
+
+            System.out.println("" + arrList); */
+
+
+        } catch (Exception E) {
 
         }
-
     }
-
-
-
-
-
-
 
     public String url_responsecode() {
         int noOfFailURL=0;
@@ -74,10 +118,7 @@ public class Master_Settings {
         String FailedURL="";
         try {
 
-
-
-
-            urls = utility_methods.find_allLinksURL(Global_link);
+           urls = utility_methods.find_allLinksURL(Global_link);
             for (String urloc : urls) {
                 fullURL = "http://qaerp.franciscanecare.net" + urloc;
                 System.out.println("" + fullURL);

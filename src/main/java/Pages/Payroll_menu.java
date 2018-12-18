@@ -1,26 +1,37 @@
 package Pages;
 
 
+import Utility.utility_methods;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import static Pages.Advance.Fix_fad;
 import static Pages.Master_Settings.Global_link;
-import static Utility.utility_methods.find_allLinksTitle;
+import static Pages.Payroll_Master.define_SA;
+import static Pages.Reports.Bank_stmt;
+import static Pages.Salary_Reports.B_stmt;
+import static Pages.Salary_str.LWP;
+import static Pages.GlobalMasterMenu_Pagecheck.li;
+
 
 
 public class Payroll_menu {
+    WebDriver driver;
+
     private static XSSFSheet ExcelWSheet;
     private static XSSFWorkbook ExcelWBook;
     private static XSSFCell Cell;
+
 
     public static void main(String args[]) throws Exception {
 
@@ -57,14 +68,12 @@ public class Payroll_menu {
 
             System.out.println();
         }
-        try{
-          //  List<String> name=find_allLinksTitle(Global_link);
-        }
-        catch(Exception e)
-        {
-
-        }
     }
 
 
-}
+
+        }
+
+
+
+

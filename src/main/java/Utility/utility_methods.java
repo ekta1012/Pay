@@ -4,10 +4,7 @@ import Base.TestBase;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.apache.commons.io.FileUtils;
 import org.testng.ITestResult;
@@ -33,22 +30,32 @@ public class utility_methods {
     public static int res;
 
     public static List<String> find_allLinksTitle(List<WebElement> eleList) throws Exception {
-        List<String> names = new ArrayList<>();
+        List<String> name = new ArrayList<>();
         try {
             for (WebElement currentWebElement : eleList) {
-                if (!currentWebElement.getAttribute("href").equalsIgnoreCase("")) {
-                    names.add(currentWebElement.getAttribute("span"));
-                }
+                if (!currentWebElement.getAttribute("href").equalsIgnoreCase("javascript:void(0)")) {
+                    name.add(currentWebElement.getAttribute("href"));
+                } else {
+                    /**
+                     * will pick the value on the basis of onclick() in case of no anchor tag exist
+                     */
+                    String onClickStr = currentWebElement.getAttribute("onclick");
+                    String[] onClickStrSplitArr = onClickStr.split(";addTab");
+                    String urls = onClickStrSplitArr[1].substring(1, onClickStrSplitArr[1].lastIndexOf(",'/"));
+                    String str = urls.replaceAll("'", "");
+                    name.add(str);
 
                 }
 
             }
-        catch(Exception e) {
-            System.out.println("" + e);
-        }
-        return names;
 
+        }
+        catch (Exception e) {
+            e.getMessage();
+
+        }return name;
     }
+
 
 
     static public void action_movetoElements(WebElement element, Boolean flag) {

@@ -1,6 +1,7 @@
 package TestCases;
 
 import Base.TestBase;
+import Pages.Master_Settings;
 import Pages.Salary_Reports;
 import Pages.Salary_str;
 import org.testng.annotations.Test;
@@ -31,5 +32,12 @@ public class verifySal_report {
         SoftAssert soft = new SoftAssert();
         soft.assertEquals(mc.url_responsecode(), "OK");
         soft.assertAll();
+    }
+
+    public void Try()
+
+    {
+
+
     }
 }

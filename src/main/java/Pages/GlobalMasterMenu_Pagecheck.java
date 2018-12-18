@@ -35,7 +35,7 @@ public class GlobalMasterMenu_Pagecheck {
     @FindBy(xpath = ("//span[text()='Define Session']/ancestor::li//a[@onclick]"))
     static
     @CacheLookup
-    List<WebElement> link;
+    List<WebElement> li;
 
 
     public GlobalMasterMenu_Pagecheck(WebDriver driver) {
@@ -60,7 +60,7 @@ public class GlobalMasterMenu_Pagecheck {
             //utility_methods.action_movetoElements(link,true);
             //action_movetoElements.ac.moveToElement(we).click().build().perform();
             log.debug("jhhd");
-            urls = utility_methods.find_allLinksURL(link);
+            urls = utility_methods.find_allLinksURL(li);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -95,7 +95,7 @@ public class GlobalMasterMenu_Pagecheck {
            int successURL=0;
            String FailedURL="";
         try {
-            urls = utility_methods.find_allLinksURL(link);
+            urls = utility_methods.find_allLinksURL(li);
             for (String urloc : urls) {
                 fullURL = "http://qaerp.franciscanecare.net" + urloc;
                 System.out.println("" + fullURL);

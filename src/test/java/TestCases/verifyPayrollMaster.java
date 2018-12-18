@@ -21,6 +21,7 @@ public class verifyPayrollMaster {
     {
         Payroll_Master mc = new Payroll_Master(TestBase.returnInstance().returnDriver());
         mc.verifyPage_split_Master();
+
     }
 
     @Test

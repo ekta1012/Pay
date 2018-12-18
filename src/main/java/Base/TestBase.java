@@ -67,7 +67,9 @@ public class TestBase  {
             URL classUrl  = TestBase.class.getClassLoader().getResource(className);
             String fullPath = classUrl==null ? null : classUrl.getPath();
             String absolutePath = fullPath.substring(1,fullPath.length()-className.length());
-            fp = new FileInputStream(absolutePath + "/Config/config.properties");
+          //  C:\Users\abc\IdeaProjects\Pay\src\main\java\Config\config.properties
+                    fp = new FileInputStream(absolutePath + "/Config/config.properties");
+           // fp = new FileInputStream(absolutePath + "/Config/config.properties");
 
             prop.load(fp);
             //prop.load(inputStream);
