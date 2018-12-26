@@ -8,7 +8,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.net.URL;
+import java.util.ArrayList;
+
 import java.util.List;
+
+import static Pages.Advance.Fix_fad;
+import static Pages.GlobalMasterMenu_Pagecheck.li;
+import static Pages.Master_Settings.Global_link;
+import static Pages.Payroll_Master.define_SA;
+
+
+//import static Pages.Payroll_menu.arrName;
+import static Pages.Payroll_menu.Excel;
+import static Pages.Payroll_menu.arrName;
+import static Pages.Salary_Reports.B_stmt;
+import static Pages.Salary_str.LWP;
+
 
 public class Reports {
 
@@ -27,7 +42,7 @@ public class Reports {
     WebElement Emp_statistics;
 
 
-    @FindBy(xpath = ("//span[text()='Bank Statement Report']/ancestor::li//a[@onclick]"))
+    @FindBy(xpath = ("//span[text()='Employee Statistics']/ancestor::li//a[@onclick]"))
     static
     @CacheLookup
     List<WebElement> Bank_stmt;
@@ -37,14 +52,80 @@ public class Reports {
         PageFactory.initElements(driver, this);
     }
 
+    public static void find_allLinksTitle() {
+
+        try {
+            Payroll_menu pm = new Payroll_menu();
+            List<String> allAttribute = new ArrayList<>();
+            List<String> global_master = utility_methods.find_allLinksTitle(li);
+            List<String> master_setting = utility_methods.find_allLinksTitle(Global_link);
+            //payroll master not working
+            List<String> payroll_master = utility_methods.find_allLinksTitle(define_SA);
+            //
+            List<String> Advance = utility_methods.find_allLinksTitle(Fix_fad);
+
+            List<String> sal_str = utility_methods.find_allLinksTitle(LWP);
+            List<String> sal_reports = utility_methods.find_allLinksTitle(B_stmt);
+            List<String> reports = utility_methods.find_allLinksTitle(Bank_stmt);
+
+            allAttribute.addAll(global_master);
+            allAttribute.addAll(master_setting);
+            allAttribute.addAll(payroll_master);
+            allAttribute.addAll(Advance);
+            allAttribute.addAll(sal_str);
+            allAttribute.addAll(sal_reports);
+            allAttribute.addAll(reports);
+
+            for (String ms : allAttribute) {
+                System.out.println("" + ms);
+            }
+
+
+            List<String> notFoundLink = new ArrayList<String>();
+            System.out.println("ekta" + pm.arrName);
+
+            for (String valueFromXLS : arrName) {
+                System.out.println("ekta" + valueFromXLS);
+                for (String valueFromForm : allAttribute) {
+                    if (!valueFromXLS.equalsIgnoreCase(valueFromForm)) {
+                        notFoundLink.add(valueFromXLS);
+                        System.out.println("" + notFoundLink);
+                    }
+                }
+            }
+
+            if (notFoundLink.size() > 0) {
+                System.out.println("One or more link not found");
+                for (String valuenotFound : notFoundLink) {
+                    System.out.println("" + valuenotFound);
+                }
+            }
+        } catch (Exception E) {
+
+        }
+
+    }
+
+
+//   if(ms==Payroll_menu.w)
+//                {
+//                System.out.println("String are Equal");
+//                }
+//                else
+//                {
+//                    System.out.println("String are't Equal");
+//                }
+
+
     public void gl() {
         utility_methods.action_movetoElements(reports, true);
         utility_methods.action_movetoElements(Emp_statistics, true);
     }
+
     public String url_responsecode() {
-        int noOfFailURL=0;
-        int successURL=0;
-        String FailedURL="";
+        int noOfFailURL = 0;
+        int successURL = 0;
+        String FailedURL = "";
         try {
             urls = utility_methods.find_allLinksURL(Bank_stmt);
             for (String urloc : urls) {
@@ -56,12 +137,10 @@ public class Reports {
 
                     successURL++;
 
-                }
-
-                else {
+                } else {
                     System.out.println("Issue in this URL:::" + fullURL);
                     noOfFailURL++;
-                    FailedURL = FailedURL +" "+"\n"+ "URL" + noOfFailURL + ":" + fullURL;
+                    FailedURL = FailedURL + " " + "\n" + "URL" + noOfFailURL + ":" + fullURL;
                 }
 
             }
@@ -71,14 +150,13 @@ public class Reports {
         //   utility_methods.takeScreenShoot(TestBase.returnInstance().returnDriver(),"G://test1.png");
 
 
-
-        catch(Exception e) {
+        catch (Exception e) {
             // log.fatal("Fatal");
             //System.out.println("Issue in" + fullURL + "" + e.getMessage());
             e.printStackTrace();
         }
 
-        if(noOfFailURL>0)
+        if (noOfFailURL > 0)
             return FailedURL;
         else
             System.out.println("*************NO URL IN FAILED CATEGORY******************");
@@ -111,5 +189,5 @@ public class Reports {
             }
         }
     }
-}
 
+}

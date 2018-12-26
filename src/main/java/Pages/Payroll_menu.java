@@ -12,67 +12,86 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-import static Pages.Advance.Fix_fad;
-import static Pages.Master_Settings.Global_link;
-import static Pages.Payroll_Master.define_SA;
-import static Pages.Reports.Bank_stmt;
-import static Pages.Salary_Reports.B_stmt;
-import static Pages.Salary_str.LWP;
-import static Pages.GlobalMasterMenu_Pagecheck.li;
+
 
 
 
 public class Payroll_menu {
+
     WebDriver driver;
+    String arrName1;
 
     private static XSSFSheet ExcelWSheet;
     private static XSSFWorkbook ExcelWBook;
     private static XSSFCell Cell;
+    public static String w;
+    //   public String arrName1;
+    public static List<String> arrName;
 
 
-    public static void main(String args[]) throws Exception {
+    public static List<String> Excel() throws IOException {
+
+        try {
+
+            FileInputStream ExcelFile = new FileInputStream("C:\\Users\\abc\\IdeaProjects\\Pay\\src\\main\\java\\Testdata\\Menu1_Excel.xlsx");
+
+            ExcelWBook = new XSSFWorkbook(ExcelFile);
+
+            ExcelWSheet = ExcelWBook.getSheet("Sheet1");
+            //  int a=ExcelWSheet.getFirstRowNum();
+            // int a=ExcelWSheet.getLastRowNum();
 
 
-        FileInputStream ExcelFile = new FileInputStream("C:\\Users\\abc\\IdeaProjects\\Pay\\src\\main\\java\\Testdata\\Menu_Excel.xlsx");
+            int a = ExcelWSheet.getPhysicalNumberOfRows();
+            System.out.println("Total rows in Excel is " + a + "  " + "and Menu's are following:");
 
-        ExcelWBook = new XSSFWorkbook(ExcelFile);
+            // Sheet ExcelWSheet = ExcelWBook.getSheet("Sheet1");
 
-        ExcelWSheet = ExcelWBook.getSheet("Sheet1");
-        //  int a=ExcelWSheet.getFirstRowNum();
-        // int a=ExcelWSheet.getLastRowNum();
+            int rowCount = ExcelWSheet.getLastRowNum() - ExcelWSheet.getFirstRowNum();
 
 
-        int a = ExcelWSheet.getPhysicalNumberOfRows();
-        System.out.println("Total rows in Excel is " + a + "  " + "and Menu's are following:");
+            for (int i = 0; i < rowCount + 1; i++) {
 
-        Sheet ExcelWSheet = ExcelWBook.getSheet("Sheet1");
+                Row row = ExcelWSheet.getRow(i);
+                arrName = new ArrayList<String>();
 
-        int rowCount = ExcelWSheet.getLastRowNum() - ExcelWSheet.getFirstRowNum();
+                //Create a loop to print cell values in a row
 
-        for (int i = 0; i < rowCount + 1; i++) {
+                for (int j = 0; j < row.getLastCellNum(); j++) {
 
-            Row row = ExcelWSheet.getRow(i);
+                    //Print Excel data in console
 
-            //Create a loop to print cell values in a row
+                    //w= row.getCell(j).getStringCellValue();
+                    //System.out.print(row.getCell(j).getStringCellValue() + "\n");
+                    arrName.add(row.getCell(j).getStringCellValue());
+                    for (String arrName1 : arrName) {
 
-            for (int j = 0; j < row.getLastCellNum(); j++) {
-
-                //Print Excel data in console
-
-                System.out.print(row.getCell(j).getStringCellValue() + "\n");
+                    }
+                }
 
             }
 
-            System.out.println();
+        } catch (Exception e) {
+            System.out.println("" + e);
         }
+        return arrName;
+
     }
 
 
+}
 
-        }
+
+
+
+
+
+
 
 
 
