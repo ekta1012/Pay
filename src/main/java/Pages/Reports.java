@@ -83,15 +83,23 @@ public class Reports {
 
             List<String> notFoundLink = new ArrayList<String>();
             System.out.println("ekta" + pm.arrName);
-
-            for (String valueFromXLS : arrName) {
+            Payroll_menu.Excel();
+            boolean isLinkFoundinForms = false;
+            for (String valueFromXLS : Payroll_menu.arrName) {
+                isLinkFoundinForms = false;
                 System.out.println("ekta" + valueFromXLS);
                 for (String valueFromForm : allAttribute) {
-                    if (!valueFromXLS.equalsIgnoreCase(valueFromForm)) {
-                        notFoundLink.add(valueFromXLS);
-                        System.out.println("" + notFoundLink);
+                    if (valueFromXLS.equalsIgnoreCase(valueFromForm)) {
+                        isLinkFoundinForms = true;
+                        break;
+
                     }
                 }
+                if(!isLinkFoundinForms){
+                    notFoundLink.add(valueFromXLS);
+                    System.out.println("" + notFoundLink);
+                }
+
             }
 
             if (notFoundLink.size() > 0) {

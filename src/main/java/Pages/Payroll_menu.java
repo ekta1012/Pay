@@ -38,7 +38,7 @@ public class Payroll_menu {
 
         try {
 
-            FileInputStream ExcelFile = new FileInputStream("C:\\Users\\abc\\IdeaProjects\\Pay\\src\\main\\java\\Testdata\\Menu1_Excel.xlsx");
+            FileInputStream ExcelFile = new FileInputStream("C:\\Ashwini\\TestingStuff\\pay\\Pay\\src\\main\\java\\TestData\\Menu.xlsx");
 
             ExcelWBook = new XSSFWorkbook(ExcelFile);
 
@@ -54,11 +54,11 @@ public class Payroll_menu {
 
             int rowCount = ExcelWSheet.getLastRowNum() - ExcelWSheet.getFirstRowNum();
 
-
+            arrName = new ArrayList<String>();
             for (int i = 0; i < rowCount + 1; i++) {
 
                 Row row = ExcelWSheet.getRow(i);
-                arrName = new ArrayList<String>();
+
 
                 //Create a loop to print cell values in a row
 
@@ -69,9 +69,9 @@ public class Payroll_menu {
                     //w= row.getCell(j).getStringCellValue();
                     //System.out.print(row.getCell(j).getStringCellValue() + "\n");
                     arrName.add(row.getCell(j).getStringCellValue());
-                    for (String arrName1 : arrName) {
-
-                    }
+//                    for (String arrName1 : arrName) {
+//
+//                    }
                 }
 
             }

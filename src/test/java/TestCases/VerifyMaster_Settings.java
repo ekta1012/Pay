@@ -34,14 +34,5 @@ public class VerifyMaster_Settings {
         soft.assertAll();
     }
 
-    @Test
 
-    public void Try()
-
-    {
-
-        Master_Settings mc = new Master_Settings(TestBase.returnInstance().returnDriver());
-
-       mc.find_allLinksTitle();
-    }
 }

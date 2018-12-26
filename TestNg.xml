@@ -51,7 +51,7 @@
 
     <test name="Verify Reports">
         <classes>
-            <class name="TestCases.verifySal_report" />
+            <class name="TestCases.verify_reports" />
         </classes>
     </test>
 
